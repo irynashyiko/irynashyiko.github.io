@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where Is My Money | Financial Transparency for Artists</title>
+    <meta
+      name="description"
+      content="Where Is My Money helps independent artists and labels track streaming and royalty income in one clear place."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand" href="index.html">Where Is My Money</a>
+          <div class="menu-links">
+            <a href="#overview">Overview</a>
+            <a href="#connections">Connections</a>
+            <a href="#income">Income</a>
+            <a href="#invoices">Invoices</a>
+          </div>
+          <a class="pill-link" href="#connections">Open workspace</a>
+        </nav>
+
+        <section class="hero-grid" id="top">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Live prototype</p>
+            <h1>
+              Track every payment.
+              <span>Understand your income. Stay in control.</span>
+            </h1>
+            <p class="lede">
+              A single workspace to track streaming income, royalties, and
+              invoices — designed for independent artists navigating complex
+              payment systems.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#connections">Add platform account</a>
+              <a class="button button-secondary" href="#invoices">Create invoice</a>
+            </div>
+            <div class="hero-highlights">
+              <span>Streaming income</span>
+              <span>Payout tracking</span>
+              <span>Invoice templates</span>
+              <span>Transparent reporting</span>
+            </div>
+          </div>
+
+          <div class="hero-card" data-reveal>
+            <div class="panel panel-main">
+              <div class="panel-header">
+                <span class="status-dot"></span>
+                <p>UK artist overview / April</p>
+              </div>
+              <h2>Net view across every income stream</h2>
+              <div class="hero-metrics">
+                <article>
+                  <span>Total tracked</span>
+                  <strong id="hero-total-income">£0</strong>
+                </article>
+                <article>
+                  <span>Paid or received</span>
+                  <strong id="hero-paid-income">£0</strong>
+                </article>
+                <article>
+                  <span>Pending</span>
+                  <strong id="hero-pending-income">£0</strong>
+                </article>
+              </div>
+              <div class="hero-breakdown">
+                <div class="breakdown-row">
+                  <span>Spotify</span>
+                  <strong id="hero-spotify-income">£0</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>PRS for Music</span>
+                  <strong id="hero-prs-income">£0</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>PPL</span>
+                  <strong id="hero-ppl-income">£0</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Invoices</span>
+                  <strong id="hero-invoice-income">£0</strong>
+                </div>
+              </div>
+            </div>
+
+            <p class="hero-card-foot">Structured like a modern analytics tool, but built for artist money flow.</p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section problem-section" id="problem">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">The problem</p>
+            <h2>Artists don’t have a clear view of their income.</h2>
+            <p>
+              Music income is split across streaming platforms, PRS, PPL, live
+              payments, and invoices. These systems are fragmented, delayed,
+              and difficult to interpret, making it hard for artists to see
+              what they have earned and what still needs attention.
+            </p>
+          </div>
+
+          <div class="problem-grid" data-reveal>
+            <article class="problem-card">
+              <h3>Fragmented systems</h3>
+              <p>Income is spread across different platforms with no unified overview.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Delayed payments</h3>
+              <p>Artists often wait weeks or months without clear visibility.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Low clarity</h3>
+              <p>Data exists, but it does not explain how income is calculated.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Manual tracking</h3>
+              <p>Artists rely on spreadsheets or memory to track their finances.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section trust-strip" data-reveal id="overview">
+          <p>Saved in browser</p>
+          <p>Connected platforms</p>
+          <p>Manual income logging</p>
+          <p>Invoice tracking</p>
+          <p>Clear source visibility</p>
+        </section>
+
+        <section class="section project-overview" data-reveal>
+          <div class="overview-copy">
+            <p class="eyebrow">Why is this important?</p>
+            <h2>Artists need one clear place to understand where their money comes from.</h2>
+            <p>
+              Music income is usually split across streaming platforms,
+              PRS and PPL statements, direct payments, and client invoices.
+              This project brings those pieces into one structured dashboard so
+              artists can connect accounts, log income, track what is paid or
+              still pending, and create invoices without losing visibility.
+            </p>
+          </div>
+        </section>
+
+        <section class="section how-it-works-section" id="how-it-works">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">How it works</p>
+            <h2>A structured flow for tracking artist income.</h2>
+            <p>
+              The prototype combines account visibility, payment tracking, and
+              invoice management in one browser-based workspace.
+            </p>
+          </div>
+
+          <div class="steps" data-reveal>
+            <article class="step-card">
+              <span>01</span>
+              <h3>Connect platforms</h3>
+              <p>Add links to Spotify, PRS, PPL or other income sources.</p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>Log income</h3>
+              <p>Track payments manually or based on reports and statements.</p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>Track status</h3>
+              <p>See what is paid, pending, or requires follow-up.</p>
+            </article>
+            <article class="step-card">
+              <span>04</span>
+              <h3>Create invoices</h3>
+              <p>Generate and manage payments from clients and collaborators.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section app-shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Overview</p>
+            <h2>Your UK artist finance workspace.</h2>
+            <p>
+              This prototype works directly in the browser and keeps a clear
+              record of connected accounts, income entries, and invoices.
+            </p>
+          </div>
+
+          <div class="workspace-toolbar" data-reveal>
+            <div class="currency-card">
+              <label for="currency-select">Display currency</label>
+              <select id="currency-select" name="currency">
+                <option value="GBP">GBP - British Pound</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+              </select>
+            </div>
+            <p class="toolbar-note">
+              Built around UK music income flows including DSP payouts, PRS for
+              Music, PPL, publishing, and invoice tracking.
+            </p>
+          </div>
+
+          <div class="prototype-metrics" data-reveal>
+            <article class="metric-card">
+              <span>Total income tracked</span>
+              <strong id="total-income">£0</strong>
+            </article>
+            <article class="metric-card">
+              <span>Pending income</span>
+              <strong id="pending-income">£0</strong>
+            </article>
+            <article class="metric-card">
+              <span>Paid invoices</span>
+              <strong id="paid-invoices">£0</strong>
+            </article>
+            <article class="metric-card">
+              <span>Connected platforms</span>
+              <strong id="connected-count">0</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section workspace-grid" id="connections">
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Connections</p>
+                <h2>Add platform links</h2>
+              </div>
+              <span class="panel-badge">Account sync</span>
+            </div>
+            <form class="workspace-form" id="account-form" novalidate>
+              <label>
+                Platform
+                <select name="platform" required>
+                  <option value="Spotify">Spotify</option>
+                  <option value="Apple Music">Apple Music</option>
+                  <option value="PRS for Music">PRS for Music</option>
+                  <option value="PPL">PPL</option>
+                  <option value="Bandcamp">Bandcamp</option>
+                  <option value="AWAL">AWAL</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <label>
+                Account or report link
+                <input
+                  type="url"
+                  name="link"
+                  placeholder="https://artists.spotify.com/... or PRS/PPL statement link"
+                  required
+                />
+              </label>
+              <label>
+                Latest payout amount
+                <input type="number" name="amount" min="0" step="0.01" placeholder="1250" required />
+              </label>
+              <label>
+                Status
+                <select name="status" required>
+                  <option value="Synced">Synced</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Needs review">Needs review</option>
+                </select>
+              </label>
+              <button type="submit" class="button button-primary">Save platform</button>
+              <p class="form-status" id="account-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Connected accounts</p>
+                <h2>Linked platform list</h2>
+              </div>
+              <span class="panel-badge">Live list</span>
+            </div>
+            <div class="connected-list" id="account-list"></div>
+          </div>
+        </section>
+
+        <section class="section workspace-grid" id="income">
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Income log</p>
+                <h2>Add revenue entries</h2>
+              </div>
+              <span class="panel-badge">Manual tracking</span>
+            </div>
+            <form class="workspace-form" id="income-form" novalidate>
+              <label>
+                Source
+                <input type="text" name="source" placeholder="Spotify UK April payout" required />
+              </label>
+              <label>
+                Category
+                <select name="category" required>
+                  <option value="Streaming">Streaming</option>
+                  <option value="PRS">PRS</option>
+                  <option value="PPL">PPL</option>
+                  <option value="Publishing">Publishing</option>
+                  <option value="Live">Live</option>
+                  <option value="Invoice">Invoice</option>
+                </select>
+              </label>
+              <label>
+                Amount
+                <input type="number" name="amount" min="0" step="0.01" placeholder="840" required />
+              </label>
+              <label>
+                Payment status
+                <select name="status" required>
+                  <option value="Paid">Paid</option>
+                  <option value="Pending">Pending</option>
+                </select>
+              </label>
+              <button type="submit" class="button button-primary">Add income</button>
+              <p class="form-help">Tip: Log each payment as it arrives to build a clear financial timeline.</p>
+              <p class="form-status" id="income-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Income records</p>
+                <h2>Track what was paid and what is still pending</h2>
+              </div>
+              <span class="panel-badge">Transparent detail</span>
+            </div>
+            <div class="data-table">
+              <div class="table-head">
+                <span>Source</span>
+                <span>Category</span>
+                <span>Status</span>
+                <span>Amount</span>
+              </div>
+              <div id="income-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section workspace-grid" id="invoices">
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Invoice builder</p>
+                <h2>Create invoice from template</h2>
+              </div>
+              <span class="panel-badge">Prototype tool</span>
+            </div>
+            <form class="workspace-form" id="invoice-form" novalidate>
+              <label>
+                Template
+                <select name="template" required>
+                  <option value="Production">Production</option>
+                  <option value="Feature verse">Feature verse</option>
+                  <option value="Session work">Session work</option>
+                  <option value="Licensing">Licensing</option>
+                  <option value="VAT invoice">VAT invoice</option>
+                </select>
+              </label>
+              <label>
+                Client
+                <input type="text" name="client" placeholder="London label or promoter" required />
+              </label>
+              <label>
+                Service
+                <input type="text" name="service" placeholder="Mix and master package" required />
+              </label>
+              <label>
+                Amount
+                <input type="number" name="amount" min="0" step="0.01" placeholder="2500" required />
+              </label>
+              <label>
+                Due date
+                <input type="date" name="dueDate" required />
+              </label>
+              <label>
+                Status
+                <select name="status" required>
+                  <option value="Draft">Draft</option>
+                  <option value="Sent">Sent</option>
+                  <option value="Paid">Paid</option>
+                  <option value="Overdue">Overdue</option>
+                </select>
+              </label>
+              <button type="submit" class="button button-primary">Create invoice</button>
+              <p class="form-help">Track invoices as draft, sent, or paid to avoid lost payments.</p>
+              <p class="form-status" id="invoice-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="workspace-card" data-reveal>
+            <div class="workspace-head">
+              <div>
+                <p class="eyebrow">Invoice centre</p>
+                <h2>Saved invoices</h2>
+              </div>
+              <span class="panel-badge">Template based</span>
+            </div>
+            <div class="invoice-list" id="invoice-list"></div>
+          </div>
+        </section>
+
+        <section class="section prototype-scope" data-reveal>
+          <div class="overview-copy scope-card">
+            <p class="eyebrow">Future direction</p>
+            <h2>Exploring Open Banking integration</h2>
+            <p>
+              Future development of this project may explore Open Banking
+              to support faster payments, clearer transaction tracking,
+              and consent-based connections between financial systems.
+            </p>
+          </div>
+        </section>
+
+        <section class="section prototype-scope" data-reveal>
+          <div class="overview-copy scope-card">
+            <p class="eyebrow">Prototype scope</p>
+            <h2>This is an early-stage concept demonstration.</h2>
+            <p>
+              This prototype shows how artist income could be structured in one
+              system. It is not a fully connected product.
+            </p>
+            <ul class="scope-list">
+              <li>Payments are manually logged for demonstration purposes</li>
+              <li>Platform integrations are simulated</li>
+              <li>No real financial data is processed</li>
+              <li>Future development may include Open Banking integration</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Where Is My Money prototype for artist income transparency.</p>
+        <div class="footer-links">
+          <a href="#overview">Overview</a>
+          <a href="#connections">Connections</a>
+          <a href="#income">Income</a>
+          <a href="#invoices">Invoices</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Where Is My Money</title>
+    <meta
+      name="description"
+      content="Join the waitlist or contact the project team for Where Is My Money."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand" href="index.html">Where Is My Money</a>
+          <div class="menu-links">
+            <a href="problem.html">Problem</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="features.html">Features</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <a class="pill-link" href="#cta">Join the waitlist</a>
+        </nav>
+
+        <section class="page-hero" data-reveal>
+          <p class="eyebrow">Stage 7</p>
+          <h1>
+            Contact and waitlist
+            <span>for artists and teams.</span>
+          </h1>
+          <p class="lede">
+            Join early access and receive updates on the next prototype releases.
+          </p>
+        </section>
+      </header>
+
+      <main>
+        <section class="section cta-section" id="cta" data-reveal>
+          <div>
+            <p class="eyebrow">Early access form</p>
+            <h2>Reserve your spot.</h2>
+            <p>
+              Add your email to receive product updates and testing invites.
+            </p>
+          </div>
+          <form class="cta-form waitlist-form" novalidate>
+            <label for="contact-email" class="sr-only">Email address</label>
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              placeholder="artist@email.com"
+              required
+            />
+            <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="form_start" value="" />
+            <button type="submit" class="button button-primary">Join the waitlist</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="section">
+          <div class="story-grid">
+            <article class="story-card" data-reveal>
+              <h3>What happens after submit?</h3>
+              <p>
+                Your email is saved locally in this prototype and shown as a
+                successful waitlist entry.
+              </p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Validation included</h3>
+              <p>
+                Form checks email format and blocks obvious bot behavior before
+                accepting a submission.
+              </p>
+            </article>
+            <article class="story-card" data-reveal>
+              <h3>Prototype note</h3>
+              <p>
+                This is a lightweight frontend implementation, ready to connect
+                to a backend service in a future stage.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Where Is My Money - Financial transparency for independent artists.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="problem.html">Problem</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="features.html">Features</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
