@@ -626,6 +626,40 @@ select:focus-visible {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.invoice-builder-layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  align-items: start;
+}
+
+.invoice-qr-panel {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(211, 224, 242, 0.14);
+  background: rgba(8, 19, 35, 0.46);
+}
+
+.invoice-qr-panel h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.invoice-qr-panel p:not(.eyebrow) {
+  margin: 0;
+  color: #bfd0e7;
+  line-height: 1.6;
+}
+
+.invoice-qr-image {
+  width: min(100%, 260px);
+  justify-self: center;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+}
+
 .workspace-form label {
   display: grid;
   gap: 9px;
@@ -1384,6 +1418,10 @@ select:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .invoice-builder-layout {
+    grid-template-columns: 1fr;
+  }
+
   .workspace-toolbar {
     grid-template-columns: 1fr;
     align-items: stretch;
@@ -1435,7 +1473,8 @@ select:focus-visible {
   .workspace-form,
   .invoice-item-grid,
   .table-head,
-  .table-row {
+  .table-row,
+  .invoice-builder-layout {
     grid-template-columns: 1fr;
   }
 

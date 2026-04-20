@@ -365,46 +365,61 @@
               </div>
               <span class="panel-badge">Prototype tool</span>
             </div>
-            <form class="workspace-form" id="invoice-form" novalidate>
-              <label>
-                Template
-                <select name="template" required>
-                  <option value="Production">Production</option>
-                  <option value="Feature verse">Feature verse</option>
-                  <option value="Session work">Session work</option>
-                  <option value="Licensing">Licensing</option>
-                  <option value="VAT invoice">VAT invoice</option>
-                </select>
-              </label>
-              <label>
-                Client
-                <input type="text" name="client" placeholder="London label or promoter" required />
-              </label>
-              <label>
-                Service
-                <input type="text" name="service" placeholder="Mix and master package" required />
-              </label>
-              <label>
-                Amount
-                <input type="number" name="amount" min="0" step="0.01" placeholder="2500" required />
-              </label>
-              <label>
-                Due date
-                <input type="date" name="dueDate" required />
-              </label>
-              <label>
-                Status
-                <select name="status" required>
-                  <option value="Draft">Draft</option>
-                  <option value="Sent">Sent</option>
-                  <option value="Paid">Paid</option>
-                  <option value="Overdue">Overdue</option>
-                </select>
-              </label>
-              <button type="submit" class="button button-primary">Create invoice</button>
-              <p class="form-help">Track invoices as draft, sent, or paid to avoid lost payments.</p>
-              <p class="form-status" id="invoice-status" aria-live="polite"></p>
-            </form>
+            <div class="invoice-builder-layout">
+              <form class="workspace-form" id="invoice-form" novalidate>
+                <label>
+                  Template
+                  <select name="template" required>
+                    <option value="Production">Production</option>
+                    <option value="Feature verse">Feature verse</option>
+                    <option value="Session work">Session work</option>
+                    <option value="Licensing">Licensing</option>
+                    <option value="VAT invoice">VAT invoice</option>
+                  </select>
+                </label>
+                <label>
+                  Client
+                  <input type="text" name="client" placeholder="London label or promoter" required />
+                </label>
+                <label>
+                  Service
+                  <input type="text" name="service" placeholder="Mix and master package" required />
+                </label>
+                <label>
+                  Amount
+                  <input type="number" name="amount" min="0" step="0.01" placeholder="2500" required />
+                </label>
+                <label>
+                  Due date
+                  <input type="date" name="dueDate" required />
+                </label>
+                <label>
+                  Status
+                  <select name="status" required>
+                    <option value="Draft">Draft</option>
+                    <option value="Sent">Sent</option>
+                    <option value="Paid">Paid</option>
+                    <option value="Overdue">Overdue</option>
+                  </select>
+                </label>
+                <button type="submit" class="button button-primary">Create invoice</button>
+                <p class="form-help">Track invoices as draft, sent, or paid to avoid lost payments.</p>
+                <p class="form-status" id="invoice-status" aria-live="polite"></p>
+              </form>
+
+              <aside class="invoice-qr-panel" aria-label="QR payment option">
+                <p class="eyebrow">Quick payment</p>
+                <h3>Scan to pay £1</h3>
+                <p>
+                  Place this beside the invoice section so visitors can scan and make a £1 test payment instantly.
+                </p>
+                <img
+                  class="invoice-qr-image"
+                  src="./GoCardless-QRCode-2.png"
+                  alt="GoCardless QR code for a £1 test payment"
+                />
+              </aside>
+            </div>
           </div>
 
           <div class="workspace-card" data-reveal>
